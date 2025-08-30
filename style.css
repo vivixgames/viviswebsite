@@ -51,14 +51,15 @@ h1 {
 
 .likedsongs {
   flex: 1;
-  max-width: 250px;
+  max-width: 100px;
 }
 
 .likedsongs img {
-  width: 100%;
+  width: 50%;
   border-radius: 20px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
 
 
 
