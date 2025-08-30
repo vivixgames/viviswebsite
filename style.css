@@ -1,8 +1,13 @@
 body {
-  background-color: #fff0f6; /* pastel pink */
+  margin 0;
+  /*background-color: #fff0f6; /* /* pastel pink */
+  background: linear-gradient(135deg, #ffccff, #ccffff);
   font-family: monospace, cursive, sans-serif;
   color: #333;
   text-align: center;
+  height: 100vh;
+  cursor: url("images/cursor.png"), auto;
+  overflow: hidden;
 }
 
 h1 {
@@ -23,5 +28,6 @@ h1 {
 .bottom-left { bottom: 20px; left: 20px; }
 .bottom-middle { bottom: 20px; left: 50%; transform: translateX(-50%); }
 .bottom-right { bottom: 20px; right: 20px; }
+
 
 
