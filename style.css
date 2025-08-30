@@ -29,5 +29,22 @@ h1 {
 .bottom-middle { bottom: 20px; left: 50%; transform: translateX(-50%); }
 .bottom-right { bottom: 20px; right: 20px; }
 
+.sparkle {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: radial-gradient(circle, #ff00cc, transparent);
+  border-radius: 50%;
+  animation: fade 1s ease-out;
+  pointer-events: none;
+}
+
+@keyframes fade {
+  from { opacity: 1; transform: scale(1); }
+  to { opacity: 0; transform: scale(2); }
+}
+
+
+
 
 
