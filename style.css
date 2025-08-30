@@ -55,10 +55,12 @@ h1 {
 }
 
 .likedsongs img {
-  width: 50%;
+  width: "100";
+  height: "100";
   border-radius: 20px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
 
 
 
