@@ -9,7 +9,7 @@ h1 {
   color: #ff69b4; /* hot pink */
 }
 
-h2 {
+.title {
   color: #ff69b4; /* hot pink */
 }
 
@@ -23,4 +23,5 @@ h2 {
 .bottom-left { bottom: 20px; left: 20px; }
 .bottom-middle { bottom: 20px; left: 50%; transform: translateX(-50%); }
 .bottom-right { bottom: 20px; right: 20px; }
+
 
