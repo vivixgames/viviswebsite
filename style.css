@@ -22,8 +22,8 @@ h1 {
 
 .corner {
   position:absolute;
-  width: 100px;
-  height: 100px;
+  width: 200px;
+  height: 200px;
 }
 
 .corner img {
@@ -155,6 +155,7 @@ h1 {
   transform: scale(1.1);
   background: #ffe4f1; /* softer pink */
 }
+
 
 
 
