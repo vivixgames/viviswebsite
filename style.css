@@ -131,16 +131,32 @@ h1 {
 
 .music-player {
   position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background: rgba(255, 192, 203, 0.8); /* pink transparent */
+  bottom: -100px; /* start hidden below the screen */
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(255, 192, 203, 0.8);
   padding: 10px 15px;
   border-radius: 12px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.2);
   display: flex;
   gap: 10px;
   align-items: center;
+  
+  animation: slideUp 0.7s ease-out forwards; /* apply animation */
 }
+
+/* keyframes for sliding up */
+@keyframes slideUp {
+  from {
+    bottom: -100px;
+    opacity: 0;
+  }
+  to {
+    bottom: 20px;
+    opacity: 1;
+  }
+}
+
 
 .music-player button {
   background: white;
@@ -155,6 +171,7 @@ h1 {
   transform: scale(1.1);
   background: #ffe4f1; /* softer pink */
 }
+
 
 
 
