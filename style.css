@@ -129,7 +129,32 @@ h1 {
   }
 }
 
+.music-player {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: rgba(255, 192, 203, 0.8); /* pink transparent */
+  padding: 10px 15px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
 
+.music-player button {
+  background: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s ease, background 0.3s ease;
+}
+
+.music-player button:hover {
+  transform: scale(1.1);
+  background: #ffe4f1; /* softer pink */
+}
 
 
 
