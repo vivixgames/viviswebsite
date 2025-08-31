@@ -87,8 +87,27 @@ h1 {
 }
 
 .corner img:hover {
-  transform: scale(1.1);
+  transform: scale(1.2);          /* make it grow a bit */
+  filter: drop-shadow(0 0 10px #ffb6f9); /* soft glow */
+  transition: transform 0.2s ease, filter 0.2s ease; /* smooth effect */
 }
+
+.top-left img:hover {
+  transform: rotate(-10deg) scale(1.1);
+}
+
+.top-right img:hover {
+  transform: scale(1.2) translateY(-5px);
+}
+
+.bottom-left img:hover {
+  transform: scale(1.2) rotate(10deg);
+}
+
+.bottom-right img:hover {
+  transform: scale(1.2) translateY(5px);
+}
+
 
 
 /* Desktop (default) already fine */
@@ -109,6 +128,7 @@ h1 {
     margin-top: 20px;
   }
 }
+
 
 
 
