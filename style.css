@@ -35,7 +35,7 @@ h1 {
 
 .top-left { top: 20px; left: 20px; }
 .top-right { top: 20px; right: 20px; }
-.bottom-left { bottom: 20px; left: 20px; }
+.bottom-left { bottom: 20px; left: 10px; }
 .bottom-middle { bottom: 20px; left: 50%; transform: translateX(-50%); }
 .bottom-right { bottom: 20px; right: 20px; }
 
@@ -66,6 +66,7 @@ h1 {
   border-radius: 20px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
 
 
 
