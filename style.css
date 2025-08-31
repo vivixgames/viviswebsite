@@ -21,6 +21,8 @@ h1 {
 /* Corners */
 .corner {
   position: absolute;
+  height: 300px;
+  width: 300px;
 }
 
 .top-left { top: 20px; left: 20px; }
@@ -62,10 +64,6 @@ h1 {
 }
 
 
-.didntwork img {
-width="110";
-  height="80";
-}
 
 
 
