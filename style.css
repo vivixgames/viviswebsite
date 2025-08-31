@@ -19,13 +19,19 @@ h1 {
 }
 
 /* Corners */
+
 .corner {
-  position: absolute;
-  width: 300px;
-  height: 300px;
+  position:absolute;
+}
+
+.corner img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* keeps aspect ratio inside the box */
   border-radius: 20px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
 
 .top-left { top: 20px; left: 20px; }
 .top-right { top: 20px; right: 20px; }
@@ -43,10 +49,6 @@ h1 {
   pointer-events: none;
 }
 
-.p1 {
-  width: "100";
-  height: "100";
-}
 
 @keyframes fade {
   from { opacity: 1; transform: scale(1); }
@@ -64,6 +66,7 @@ h1 {
   border-radius: 20px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
 
 
 
