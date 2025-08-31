@@ -91,6 +91,25 @@ h1 {
 }
 
 
+/* Desktop (default) already fine */
+
+/* Phones */
+@media (max-width: 600px) {
+  body {
+    overflow: auto; /* allow scrolling */
+  }
+
+  .corner {
+    position: static; /* stack instead of absolute */
+    display: inline-block;
+    margin: 10px;
+  }
+
+  main {
+    margin-top: 20px;
+  }
+}
+
 
 
 
