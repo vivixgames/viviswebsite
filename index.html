@@ -10,25 +10,6 @@
 <body> <!--starts the code -->
     <img src="images/logo1.png" width="110" height="80" alt="Vivi Elephant logo">
 
-<audio id="music" loop>
-  <source src="sounds/music.mp3" type="audio/mp3">
-</audio>
-
-<script>
-  const music = document.getElementById("music");
-
-  // Resume music if user previously started it
-  if (localStorage.getItem("musicPlaying") === "true") {
-    music.play().catch(() => {
-      // browser blocked autoplay until click
-    });
-  }
-
-  // Save state when user plays/pauses
-  music.onplay = () => localStorage.setItem("musicPlaying", "true");
-  music.onpause = () => localStorage.setItem("musicPlaying", "false");
-</script>
-
   
 
   <!-- Top Left: Music Link -->
@@ -88,6 +69,7 @@ anime/fav shows + links to crunchyroll/netflix or whatever
 +lots more ideas
 
 -->
+
 
 
 
