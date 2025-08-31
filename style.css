@@ -27,8 +27,8 @@ h1 {
 }
 
 .corner img {
-  width: 50%;
-  height: 50%;
+  width: 100%;
+  height: 100%;
   object-fit: contain; /* keeps aspect ratio inside the box */
 }
 
@@ -85,6 +85,7 @@ h1 {
   width: 50px;
   height: 50px;
 }
+
 
 
 
