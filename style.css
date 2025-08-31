@@ -6,7 +6,7 @@ body {
   color: #333;
   text-align: center;
   height: 100vh;
-  cursor: url("images/cursor.png"), auto;
+  cursor: url("images/cursor.png") 0, 0, auto;
   overflow: hidden;
 }
 
@@ -171,6 +171,7 @@ h1 {
   transform: scale(1.1);
   background: #ffe4f1; /* softer pink */
 }
+
 
 
 
