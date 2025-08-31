@@ -22,14 +22,14 @@ h1 {
 
 .corner {
   position:absolute;
+  width: 100px;
+  height: 100px;
 }
 
 .corner img {
   width: 50%;
   height: 50%;
   object-fit: contain; /* keeps aspect ratio inside the box */
-  border-radius: 20px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 
@@ -81,9 +81,10 @@ h1 {
 }
 
 
-
-
-
+.bottom-middle img.social {
+  width: 50px;
+  height: 50px;
+}
 
 
 
