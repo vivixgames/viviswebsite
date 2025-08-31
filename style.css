@@ -86,7 +86,7 @@ h1 {
   height: 50px;
 }
 
-.corner:hover {
+.corner img:hover {
   transform: scale(1.1);
 }
 
@@ -109,6 +109,7 @@ h1 {
     margin-top: 20px;
   }
 }
+
 
 
 
