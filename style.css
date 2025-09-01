@@ -37,8 +37,8 @@ h1 {
 
 .corner a {
   position: relative;
-  z-index: 20; /* force above stars */
-  display: inline-block;
+  z-index: 10; /* force above stars */
+  /*display: inline-block;*/
 }
 
 .corner img {
@@ -179,7 +179,7 @@ h1 {
 
 .star-container {
   position: relative; /* keeps stars inside body */
-  z-index: 5; /* stay above background */
+  z-index: 0; /* stay above background */
   pointer-events: none;
 }
 
@@ -296,8 +296,9 @@ h1 {
 /* Phones */
 @media (max-width: 600px) and (hover: none) and (pointer: coarse) {
   body {
-    cursor: auto !important; /* no custom cursor on phones */
-    overflow: auto !important; /* allow scrolling */
+    height: auto !important;
+    overflow: auto !important;
+    cursor: auto !important;
   }
 
   .corner {
@@ -309,8 +310,11 @@ h1 {
 
   main {
     margin-top: 20px;
+    pointer-events: none;
   }
+  
 }
+
 
 
 
