@@ -35,11 +35,18 @@ h1 {
   height: 200px;
 }
 
-.corner img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain; /* keeps aspect ratio inside the box */
+.corner a {
+  position: relative;
+  z-index: 20; /* force above stars */
+  display: inline-block;
 }
+
+.corner img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 
 
 .top-left { top: 20px; left: 20px; }
@@ -173,9 +180,11 @@ h1 {
 .star-container {
   position: relative; /* keeps stars inside body */
   z-index: 5; /* stay above background */
+  pointer-events: none;
 }
 
 .star {
+  pointer-events: auto;
   position: absolute;
   font-size: 2rem; /* size of star emoji, can replace w/ your drawn img later */
   background: none;
@@ -305,6 +314,7 @@ h1 {
     margin-top: 20px;
   }
 }
+
 
 
 
