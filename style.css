@@ -124,9 +124,10 @@ h1 {
   left: 50%;
   transform: translateX(-50%);
   background: rgba(255, 192, 203, 0.8);
-  padding: 10px 15px;
-  border-radius: 12px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  border: 3px solid white;
+  border-radius: 20px;
+  padding: 10px 20px;
+  box-shadow: 0 0 20px hotpink, 0 0 10px white;
   display: flex;
   gap: 10px;
   align-items: center;
@@ -149,16 +150,22 @@ h1 {
 
 .music-player button {
   background: white;
-  border: none;
-  padding: 6px 12px;
-  border-radius: 8px;
+  border: 2px solid hotpink;
+  border-radius: 12px;
+  padding: 8px 15px;
+  font-family: "Comic Sans MS", cursive;
   cursor: pointer;
   transition: transform 0.2s ease, background 0.3s ease;
 }
 
 .music-player button:hover {
-  transform: scale(1.1);
-  background: #ffe4f1; /* softer pink */
+  background: #ffe4f1;
+  transform: scale(1.2) rotate(-5deg);
+}
+
+@keyframes floaty {
+  from { transform: translateX(-50%) translateY(0); }
+  to { transform: translateX(-50%) translateY(-5px); }
 }
 
 
@@ -268,6 +275,7 @@ h1 {
     margin-top: 20px;
   }
 }
+
 
 
 
