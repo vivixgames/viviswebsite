@@ -174,7 +174,91 @@ h1 {
 
 
 
+.star-container {
+  position: relative; /* keeps stars inside body */
+  z-index: 5; /* stay above background */
+}
 
+.star {
+  position: absolute;
+  font-size: 2rem; /* size of star emoji, can replace w/ your drawn img later */
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: gold;
+  text-shadow: 0 0 10px yellow;
+  opacity: 0;
+  transform: translateY(-100px); /* start above */
+  animation: fall 1s ease forwards;
+}
+
+.star:nth-child(1) { animation-delay: 0.3s; }
+.star:nth-child(2) { animation-delay: 0.6s; }
+.star:nth-child(3) { animation-delay: 0.9s; }
+
+.star:hover {
+  transform: scale(1.3);
+  text-shadow: 0 0 20px white;
+}
+
+@keyframes fall {
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.star img {
+  width: 40px; /* adjust to match your art */
+  height: 40px;
+  filter: drop-shadow(0 0 10px yellow);
+  transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+.star:hover img {
+  transform: scale(1.3);
+  filter: drop-shadow(0 0 20px white);
+}
+
+
+/* Popup box style */
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.8);
+  background: rgba(255, 182, 193, 0.9); /* pastel pink */
+  color: purple;
+  font-family: "Comic Sans MS", cursive, sans-serif; /* Y2K vibe */
+  padding: 20px;
+  border: 3px solid hotpink;
+  border-radius: 20px;
+  box-shadow: 0 0 30px violet, 0 0 10px white;
+  text-align: center;
+  display: none;
+  z-index: 100;
+  animation: pop-in 0.3s ease forwards;
+}
+
+.popup button {
+  margin-top: 10px;
+  padding: 5px 15px;
+  border: none;
+  border-radius: 12px;
+  background: purple;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.popup button:hover {
+  background: hotpink;
+}
+
+@keyframes pop-in {
+  from { opacity: 0; transform: translate(-50%, -50%) scale(0.5); }
+  to   { opacity: 1; transform: translate(-50%, -50%) scale(1); }
+}
 
 
 
