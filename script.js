@@ -40,6 +40,26 @@ document.querySelectorAll(".star").forEach(star => {
   });
 });
 
+
+
+document.querySelectorAll("a").forEach(link => {
+  link.addEventListener("click", (e) => {
+    if (music && !link.target) { // only fade if it's an internal link
+      e.preventDefault(); // stop normal jump
+      music.volume = 1.0;
+      let fade = setInterval(() => {
+        if (music.volume > 0.05) {
+          music.volume -= 0.05;
+        } else {
+          clearInterval(fade);
+          window.location = link.href; // go after fade
+        }
+      }, 100);
+    }
+  });
+});
+
+
 closePopup.addEventListener("click", () => {
   popup.style.display = "none";
 });
