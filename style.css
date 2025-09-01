@@ -297,10 +297,15 @@ h1 {
     margin: 10px;
   }
 
+  .overlay {
+    pointer-events: none; /* let taps pass through to the <a> */
+  }
+
   main {
     margin-top: 20px;
   }
 }
+
 
 
 
