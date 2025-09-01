@@ -63,3 +63,10 @@ document.querySelectorAll("a").forEach(link => {
 closePopup.addEventListener("click", () => {
   popup.style.display = "none";
 });
+
+
+document.querySelectorAll('a').forEach(link => {
+  link.addEventListener('touchstart', () => {
+    link.click();
+  });
+});
