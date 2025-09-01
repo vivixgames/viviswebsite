@@ -285,7 +285,7 @@ h1 {
 /* Desktop (default) already fine */
 
 /* Phones */
-@media (max-width: 600px) {
+@media (max-width: 600px) and (hover: none) and (pointer: coarse) {
   body {
     cursor: auto;
     overflow: auto; /* allow scrolling */
@@ -301,6 +301,7 @@ h1 {
     margin-top: 20px;
   }
 }
+
 
 
 
