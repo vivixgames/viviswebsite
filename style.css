@@ -296,24 +296,22 @@ h1 {
 /* Phones */
 @media (max-width: 600px) and (hover: none) and (pointer: coarse) {
   body {
-    cursor: auto !important;
+    cursor: auto !important; /* no custom cursor on phones */
     overflow: auto !important; /* allow scrolling */
   }
 
   .corner {
-    position: static; /* stack instead of absolute */
+    position: static; /* stack them instead of absolute */
     display: inline-block;
     margin: 10px;
-  }
-
-  .overlay {
-    pointer-events: none; /* let taps pass through to the <a> */
+    z-index: 20; /* keep tappable */
   }
 
   main {
     margin-top: 20px;
   }
 }
+
 
 
 
